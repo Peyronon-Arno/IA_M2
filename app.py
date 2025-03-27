@@ -9,10 +9,12 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Récupérer les clés API depuis les variables d'environnement
-SPOTIFY_CLIENT_ID = os.getenv("SPOTIFY_CLIENT_ID")
-SPOTIFY_CLIENT_SECRET = os.getenv("SPOTIFY_CLIENT_SECRET")
-MISTRAL_API_KEY = os.getenv("MISTRAL_API_KEY")
-MODEL = os.getenv("MISTRAL_MODEL", "mistral-large-latest")  # Valeur par défaut
+SPOTIFY_CLIENT_ID = os.getenv("SPOTIFY_CLIENT_ID", "af7be259471e4fd6b88db02493dfb31d")
+SPOTIFY_CLIENT_SECRET = os.getenv(
+    "SPOTIFY_CLIENT_SECRET", "48341028f0fa4b94afa0f1b1b8eb3bcf"
+)
+MISTRAL_API_KEY = os.getenv("MISTRAL_API_KEY", "Jbr2xIzpacA6GfH29M6bFSBHoIfhHsBo")
+MODEL = os.getenv("MISTRAL_MODEL", "mistral-large-latest")
 
 
 os.environ["TRANSFORMERS_NO_ADVISORY_WARNINGS"] = "1"
