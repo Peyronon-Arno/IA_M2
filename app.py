@@ -14,6 +14,9 @@ SPOTIFY_CLIENT_SECRET = os.getenv("SPOTIFY_CLIENT_SECRET")
 MISTRAL_API_KEY = os.getenv("MISTRAL_API_KEY")
 MODEL = os.getenv("MISTRAL_MODEL", "mistral-large-latest")  # Valeur par défaut
 
+print("SPOTIFY_CLIENT_ID:", os.getenv("SPOTIFY_CLIENT_ID"))  # Debug
+print("SPOTIFY_CLIENT_SECRET:", os.getenv("SPOTIFY_CLIENT_SECRET"))  # Debug
+
 os.environ["TRANSFORMERS_NO_ADVISORY_WARNINGS"] = "1"
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
 
